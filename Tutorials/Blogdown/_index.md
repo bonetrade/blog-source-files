@@ -1,7 +1,7 @@
 +++
 title = "Building a Website with Blogdown"
 description = "A short tutorial on using blogdown to build a website"
-weight = 110
+weight = 30
 +++
 
 This website is built with blogdown. 
