@@ -26,11 +26,11 @@ $etudier.py 'https://scholar.google.com/scholar?hl=en&as_sdt=0%2C21&q="instagram
 
 As a graph, we spot something interesting right away:
 
-![A citation graph](/Update/2018-04-30-using-etudier-to-jump-start-a-literature-review_files/etudier1.png)
+![A citation graph](/update/2018-04-30-using-etudier-to-jump-start-a-literature-review_files/etudier1.png)
 
 Two broad clumps, or two extremely distinct ways of referring to 'Instagram'. We can then explore subclumping by searching for communities or patterns of link similarities (aka as 'modularity'):
 
-![Modularity within the citation graph](/Update/2018-04-30-using-etudier-to-jump-start-a-literature-review_files/etudier2.png)
+![Modularity within the citation graph](/update/2018-04-30-using-etudier-to-jump-start-a-literature-review_files/etudier2.png)
 
 Often however this kind of visualization is not of much use, other than how we've already used it. Instead, let's look for centrality in this graph, and identify those works whose pattern of linkages enable them to bridge these various subgroups. I presume that such works have something about them that speaks to these different aspects of scholarship and so are the works that I'll want to start with for my review. Using [gephi](http://gephi.org) I calculate eigenvector centrality (roughly, the centrality that comes from being wellconnected wellconnected others).
 
