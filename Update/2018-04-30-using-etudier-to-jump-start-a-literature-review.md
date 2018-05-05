@@ -34,6 +34,6 @@ Two broad clumps, or two extremely distinct ways of referring to 'Instagram'. We
 
 Often however this kind of visualization is not of much use, other than how we've already used it. Instead, let's look for centrality in this graph, and identify those works whose pattern of linkages enable them to bridge these various subgroups. I presume that such works have something about them that speaks to these different aspects of scholarship and so are the works that I'll want to start with for my review. Using [gephi](http://gephi.org) I calculate eigenvector centrality (roughly, the centrality that comes from being wellconnected wellconnected others).
 
-![centralities in the graph](/Update/2018-04-30-using-etudier-to-jump-start-a-literature-review_files/etudier3.png)
+![centralities in the graph](/update/2018-04-30-using-etudier-to-jump-start-a-literature-review_files/etudier3.png)
 
 You can download our graph of data for yourself [here](/Update/instagram-d2-p2-output-table-apr30-2018.csv).
