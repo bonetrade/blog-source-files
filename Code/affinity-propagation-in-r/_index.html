@@ -1,0 +1,43 @@
+---
+title: "Affinity Propagation in R"
+weight: 20
+---
+
+
+
+<div id="introduction" class="section level1">
+<h1>Introduction</h1>
+<p>Having determined the <a href="../classify-images-with-tensorflow/">visual similarity of the vectors</a>, we first reduced the complexity of the resulting data with t-sne, a common first step when working with the output of neural networks. It is similar to principle components analysis, but better suited here because the data has a very high number of dimensions, and so better preserves the patterns.</p>
+<p>In this notebook, we are then taking this data and exploring it for clusters. We use the ‘Affinity propagation’ technique. From our paper (2018):</p>
+<blockquote>
+<p>Affinity propagation is a clustering algorithm that identifies exemplars among data points and forms clusters of data points around these exemplars. K-means is often used for clustering but it is sensitive to the initial random selection of exemplars, and does not necessarily select the best representation of clusters; in Frey and Duecke’s approach, all data points are considered as possible exemplars. This approach models the datapoints as a kind of network along which messages are passed recursively. From this, exemplars and clusters emerge (2007). An important difference between k-means and affinity propagation clustering is that for affinity propagation we do not need to specify the number of clusters in advance as we do for k-means</p>
+</blockquote>
+<pre class="r"><code># import the data
+library(jsonlite)
+mydata &lt;- fromJSON(&quot;image_tsne_projections.json&quot;, flatten=TRUE)</code></pre>
+<p>We can begin by taking a look at the data like so:</p>
+<pre class="r"><code>## let&#39;s see what the data looks like
+## in this example, we only loaded 25 images (demo)
+## so it&#39;s a bit artificial, but carry on.
+
+library(ggplot2)
+g = ggplot(mydata, aes(x = x, y = y)) + geom_point() + labs(title = &quot;T-SNE Plot of Image Similarity Vectors&quot;)
+print(g)</code></pre>
+<p><img src="/Code/affinity-propagation-in-r/_index_files/figure-html/unnamed-chunk-2-1.png" width="672" /></p>
+<p>To the eye, there is clearly structure. So how many clusters? We first get the data ready for the affinity propagation algorithm by passing it to a new variable, and then running it through ‘apcluster’:</p>
+<pre class="r"><code>X &lt;- cbind(mydata$x, mydata$y)
+
+## affinity propogation
+library(apcluster)</code></pre>
+<pre><code>## 
+## Attaching package: &#39;apcluster&#39;</code></pre>
+<pre><code>## The following object is masked from &#39;package:stats&#39;:
+## 
+##     heatmap</code></pre>
+<pre class="r"><code>d.apclus &lt;- apcluster(negDistMat(r=2), X) 
+cat(&quot;affinity propogation optimal number of clusters:&quot;, length(d.apclus@clusters), &quot;\n&quot;)</code></pre>
+<pre><code>## affinity propogation optimal number of clusters: 4</code></pre>
+<p>Finally, we can plot these clusters:</p>
+<pre class="r"><code>plot(d.apclus, X)</code></pre>
+<p><img src="/Code/affinity-propagation-in-r/_index_files/figure-html/unnamed-chunk-4-1.png" width="672" /></p>
+</div>
