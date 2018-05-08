@@ -12,3 +12,7 @@ There is a thriving online trade in anatomical, ethnographic and archaeological 
 Can we teach machines to identify from photographs alone patterns in the 'visual rhetoric' that signal materials for sale? Can 'licit' materials be discerned from 'illicit'? Are there geographical patterns? Can we trace materials back to a source?
 
 This website is the public face of our research. Here you will find updates, code, research compendia, papers, presentations, and other elements of our work over the next five years. We intend to produce a body of data and of code that will enable other researchers to repurpose our research into other allied fields (such as the more familiar trade in archaeological antiquities, and in the markets for other 'grey market' and black market commodities). 
+
+### Open Research
+
+All our code and data relating to this project are publicly available. All our [publications and reports](/papers) are accompanied by a compendium of code and data files that are deposited in a trustworthy data repository and referenced via DOI. We use GitHub to publicly host our code in development, at [github.com/bonetrade](https://github.com/bonetrade). We archive code and data files at the Open Science Foundation.

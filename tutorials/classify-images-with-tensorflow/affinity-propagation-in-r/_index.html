@@ -23,7 +23,7 @@ mydata &lt;- fromJSON(&quot;image_tsne_projections.json&quot;, flatten=TRUE)</co
 library(ggplot2)
 g = ggplot(mydata, aes(x = x, y = y)) + geom_point() + labs(title = &quot;T-SNE Plot of Image Similarity Vectors&quot;)
 print(g)</code></pre>
-<p><img src="/Code/affinity-propagation-in-r/_index_files/figure-html/unnamed-chunk-2-1.png" width="672" /></p>
+<p><img src="/tutorials/classify-images-with-tensorflow/affinity-propagation-in-r/_index_files/figure-html/unnamed-chunk-2-1.png" width="672" /></p>
 <p>To the eye, there is clearly structure. So how many clusters? We first get the data ready for the affinity propagation algorithm by passing it to a new variable, and then running it through ‘apcluster’:</p>
 <pre class="r"><code>X &lt;- cbind(mydata$x, mydata$y)
 
@@ -39,5 +39,5 @@ cat(&quot;affinity propogation optimal number of clusters:&quot;, length(d.apclu
 <pre><code>## affinity propogation optimal number of clusters: 4</code></pre>
 <p>Finally, we can plot these clusters:</p>
 <pre class="r"><code>plot(d.apclus, X)</code></pre>
-<p><img src="/Code/affinity-propagation-in-r/_index_files/figure-html/unnamed-chunk-4-1.png" width="672" /></p>
+<p><img src="/tutorials/classify-images-with-tensorflow/affinity-propagation-in-r/_index_files/figure-html/unnamed-chunk-4-1.png" width="672" /></p>
 </div>
