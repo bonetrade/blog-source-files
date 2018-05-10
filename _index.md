@@ -16,3 +16,10 @@ This website is the public face of our research. Here you will find updates, cod
 ### Open Research
 
 All our code and data relating to this project are publicly available. All our [publications and reports](/papers) are accompanied by a compendium of code and data files that are deposited in a trustworthy data repository and referenced via DOI. We use GitHub to publicly host our code in development, at [github.com/bonetrade](https://github.com/bonetrade). We archive code and data files at the Open Science Foundation.
+
+### Citation
+
+Graham S. and Huffer D. 2018. The Bonetrade Project Website - bonetrade.github.io. _Zenodo_. DOI: [10.5281/zenodo.1245091](https://zenodo.org/badge/latestdoi/129774865)
+
+
+Graham S. and Huffer D. 2018. The Bonetrade Project Source Text Files. _Zenodo_. DOI: [10.5281/zenodo.1241500](https://zenodo.org/badge/latestdoi/131883283)
