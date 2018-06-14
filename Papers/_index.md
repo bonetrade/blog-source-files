@@ -19,7 +19,7 @@ Graham, S. 2018 Fleshing out the bones: data and code repository. Open Science F
 
 Graham, S. 2018 Identifying-Similar-Images-with-TensorFlow-notebooks. [DOI: 10.5281/zenodo.1243787](https://zenodo.org/record/1243787) | [Launch Binder](http://mybinder.org/v2/gh/shawngraham/bindr-test-Identifying-Similar-Images-with-TensorFlow/master)
 
-Huffer, D. and Graham, S. 2018 Fleshing out the Bones: Studying the Human Remains Trade with Tensorflow and Inception, Journal of Computer Applications in Archaeology. In Press.
+Huffer, D. and Graham, S. 2018 Fleshing out the Bones: Studying the Human Remains Trade with Tensorflow and Inception, Journal of Computer Applications in Archaeology 1(1). [DOI 10.5334/jcaa.8](http://doi.org/10.5334/jcaa.8).
 
 
 #### Conference Presentations

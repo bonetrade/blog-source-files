@@ -1,5 +1,5 @@
 +++
-title = "Classify Images with Tensorflow"
+title = "Cluster Images with Tensorflow"
 description = ""
 weight = 113
 +++
