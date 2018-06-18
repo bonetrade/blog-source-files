@@ -78,8 +78,6 @@ https://www.instagram.com/p/znHyR7AbXS/
 Note:
 Not everyone is as bold as this. Most are aware that their _posts_ can be searched (ie key-word searching), and so rely on more subtle cues
 
----
-
 On Instagram alone _where dollar values were named_
 
 + total amounted to approximately $190,000
@@ -106,20 +104,6 @@ Note:
 video of man in Belgium degreasing a skull. Likely source for such a skull? WW1 battlefield. He's preparing it for cutting into an exploded view.
 
 desecration of ww2 battleship wrecks - steel is pre 1945, so different atomic signature thus valuable; bones collected, given to the boss... what happens to them?
-
----
-
-![](ata.png)
-
-![](8-100-1-SP.png)
-
-Note:
-
-'exotic fetishizing' of the dead, and esp. the non-western dead
-
-especially with the shutting down of collections built at the start of the 20th century tied up with that 'scientific racism'
-
-Ata mummy - promotion of pseudoscience and racism to broader culture
 
 ---
 
@@ -173,7 +157,7 @@ literal posts, 'human skulls for sale' do exist; but often the language is coded
 
 ## so that's what we've done
 
-### here's what we're doing
+### here's where computer vision comes into it
 
 Note:
 our current research is looking at the composition of the images themselves, computationally. There are too many images to do the classificatory work ourselves. Some approaches to these kind of image classification or determinations of similarity employ 'human' computers like the Amazon Mechanical Turk service. There are serious ethical issues with employing that kind of labour on this material.
@@ -200,7 +184,7 @@ Note:
 normally, one would feed an image to Inception, and it would recognize the particular pattern of features as being similar to others it 'knows', and it would spit out a label for what is in the image.
 
 ---
-<section data-background="duhaime.png">
+<section data-background="pixplot.png">
 
 Note:
 if however we stop the process just before the image labelling, we can use the vector representations of our images to compute similarities (the full details will be in our forthcoming JCAA paper). We are completely indebted to Douglas Duhaime and colleagues for clearly explicating and coding how this can be done.
@@ -252,3 +236,13 @@ shawn.graham@carleton.ca
 This research has been generously supported by the Social Sciences and Humanities Research Council of Canada
 
 ### [boonetrade.github.io](http://bonetrade.github.io)
+
+for technical details, see our paper in The Journal of Computer Applications in Archaeology, [DOI: 10.5334/jcaa.8](https://journal.caa-international.org/articles/10.5334/jcaa.8/) 
+
+---
+### Image Credits
+
+- dramatization of Abraham Ulrikab - screenshot from CBC The Nature of Things, [Trapped in a Human Zoo](http://www.cbc.ca/natureofthings/episodes/trapped-in-a-human-zoo)
+- screenshot of museum exhibiting skeletons - screenshot from CBC The Nature of Things, [Trapped in a Human Zoo](http://www.cbc.ca/natureofthings/episodes/trapped-in-a-human-zoo)
+- PixPlot visualization [Yale DH Lab](https://github.com/YaleDHLab/pix-plot)
+- sources for Instagram screenshots will not be shared in public
