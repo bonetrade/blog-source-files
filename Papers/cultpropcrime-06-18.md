@@ -153,8 +153,8 @@ our current research is looking at the composition of the images themselves, com
 
 ---
 
-![](machine-visions-cnn.png)
-- Yannick Asogba, '[Machine Visions](http://clome.info/work/machine-visions/)'
+![](direct.gif)
+- Carter [2017](https://techcrunch.com/2017/04/13/neural-networks-made-easy/)
 
 ---
 ![](pixplot.png)
@@ -261,6 +261,7 @@ for technical details, see our paper in <br> The Journal of Computer Application
 
 - dramatization of Abraham Ulrikab - screenshot from CBC The Nature of Things, [Trapped in a Human Zoo](http://www.cbc.ca/natureofthings/episodes/trapped-in-a-human-zoo)
 - screenshot of museum exhibiting skeletons - screenshot from CBC The Nature of Things, [Trapped in a Human Zoo](http://www.cbc.ca/natureofthings/episodes/trapped-in-a-human-zoo)
+- Carter, GumGum gif [Neural Networks Made Easy](https://techcrunch.com/2017/04/13/neural-networks-made-easy/)
 - sources for Instagram screenshots will not be shared in public
 
 ---
