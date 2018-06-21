@@ -16,7 +16,7 @@ center= true
 <table style="width:100%">
   <tr>
   <td align="left">
-  <h2 style="color:#FFFFFF">fleshing out the bones:</h2><br><h4>understanding the human remains trade<br>with computer vision</h4></td>
+  <h2 style="color:#FFFFFF">fleshing out the bones</h2><br><h4>understanding the human remains trade<br>with computer vision</h4></td>
   </tr>
 </table>
   
@@ -84,15 +84,10 @@ On Instagram alone _where dollar values were named_
 
 + the value of private sales cannot of course be known
 
----
-
-### Cultural impact:
-
-no.s of followers, following of _just those accounts that name a price_
++ Cultural impact: no.s of followers, following of _just those accounts that name a price_
 
 + a network with 138,014 individuals connected by 172,208 links
 
-Note:
 association with taxidermy, tattoo parlours - do i still have that cardiff photo?
 three broad groupings: specialists explicitly interested in bones; generalists who follow the bones but also other things; and people who don't post pictures themselves but follow the bone accounts
 
@@ -105,15 +100,8 @@ video of man in Belgium degreasing a skull. Likely source for such a skull? WW1 
 
 desecration of ww2 battleship wrecks - steel is pre 1945, so different atomic signature thus valuable; bones collected, given to the boss... what happens to them?
 
----
-
-## Understanding the trade in human remains matters.
-
----
-
 How do we deal with it?
 
-Note:
 Part of the problem is that not all of this is _illegal_. approaches and issues are of a part with broader trade in antiquities. Also: human remains are not property under common law!
 
 broader trade tends to focus on the auction houses and the big collectors; smaller objects, ebay, etc do not attract as much attention
@@ -131,16 +119,6 @@ Note:
 digital humanities approaches to data mining try to understand the contextual significance of what has been extracted
 
 in our work, we have in the first instance scraped ~ 13 000 posts from one calendar year on Instagram (one of many places where human remains are traded); some posts were caught in the trawl as far back as 2013
-
----
-![](dendro-topics.png)
-
-
-    [8] 'sale real osteology bone medical oddities sold shipping worldwide specimen'
-    [19] 'bones anatomy skeleton medical death museum medicine tattoo doctor photo'
-    [17] 'tribal asmat bone dayak tribalart kapala tibetan trophy tin headhunter'
-
-Note:
 
 we focussed on the _language_ the posts, building topic models and word vectors to understand some of the rhetorical constructions of buying and selling human Remains
 
@@ -164,27 +142,23 @@ our current research is looking at the composition of the images themselves, com
 
 ---
 
-![](https://ujwlkarn.files.wordpress.com/2016/08/screen-shot-2016-08-07-at-4-59-29-pm.png?w=1493)
 
-(an oft-copied diagram of the structure of a CNN)
-
-Note:
-
-instead, we are using a class of machine learning called 'convolutional neural networks' that build up a numerical representation of the features within an image. Such neural networks are built by analogy to how the human brain processes images. One of the largest and most accessible neural networks is Google's Inception v3 model.
-- each neuron sees or is attentative too a different aspect of the source image. in the end, that works out to 2048 different dimensions
+![](machine-visions-feature-matrix.png)
+- Yannick Asogba, '[Machine Visions](http://clome.info/work/machine-visions/)'
 
 ---
 
-![](https://4.bp.blogspot.com/-TMOLlkJBxms/Vt3HQXpE2cI/AAAAAAAAA8E/7X7XRFOY6Xo/s1600/image03.png)
-
-(Google's very own diagram. Helpful, eh?)
-
-Note:
-
-normally, one would feed an image to Inception, and it would recognize the particular pattern of features as being similar to others it 'knows', and it would spit out a label for what is in the image.
+![](machine-visions-neural-network.png)
+- Yannick Asogba, '[Machine Visions](http://clome.info/work/machine-visions/)'
 
 ---
-<section data-background="pixplot.png">
+
+![](machine-visions-cnn.png)
+- Yannick Asogba, '[Machine Visions](http://clome.info/work/machine-visions/)'
+
+---
+![](pixplot.png)
+- Yale DH lab, [code repo](https://github.com/YaleDHLab/pix-plot)
 
 Note:
 if however we stop the process just before the image labelling, we can use the vector representations of our images to compute similarities (the full details will be in our forthcoming JCAA paper). We are completely indebted to Douglas Duhaime and colleagues for clearly explicating and coding how this can be done.
@@ -221,10 +195,53 @@ This initial experiment does seem to support the idea that items for sale are di
 
 ---
 
+### Training our own classifier
+
+![](image-classifier.jpg)
+
+[Build Your Own Classifier Tutorial](https://bonetrade.github.io/tutorials/tensorflow-for-poets/)
+
+---
+
+#### Find a path through image-space
+
+![](mdlincoln-mechanical-kubler.png)
+
+
+Note:
+While this is an art-history application, I think we might be able to use a similar approach to find pathways of influence through images, if we start with images where we know that a followed/follower relationship exists. Matthew Lincoln, art historian & data scientist at the Getty
+
+
+---
+
+![](ryan-pastec.png)
+
+- Ryan Baumann [Finding Near-Matches in the Rijksmuseum with Pastec](https://ryanfb.github.io/etc/2015/11/03/finding_near-matches_in_the_rijksmuseum_with_pastec.html)
+
+Note:
+Another way to find or determine influence- pastec looks for near copies, rather than visually similar. Which images are reposted, which occur across social networks? CNN could find this too, but this lets us zero in more quickly "Pastec is an open source index and search engine for image recognition." <- something like this might be very useful when trying to match eg polaroids to auction catalogues
+
+---
+
+### Ethically Troubling
+
+<table>
+  <tr>
+    <th>![](faceall1.png)</th>
+    <th>![](faceall2.png)</th>
+  </tr>
+</table>
+
+---
+
 ## It's still early days.
 
 Note:
 
+for previous slide
+Our funders are interested in us being able to identify descendent communities for the purposes of repatriation. Can we really do this? And if we are able, our experience in building classifiers so far just points out that what we believe about the images is easy to encode: if we say these are 'mowhawk', they become reified as mohawk. Finding visual tropes is one thing; saying that, beneath the tropes, this skull was a member of group x, y, z is I think a dangerous line to pursue. But is the good of repatriation worth the risk?
+
+for current slide
 This work is in its early stages. Despite being trained on a very generic corpus of images, Inception v3 seems to be a very powerful model for pulling out some of the visual rhetoric of display. If we train a model ourselves explicitly on archaeological materials, can we identify automatically at scale legal from illegal sales? ethical from non-ethical displays of remains? can we build an archaeo-crawler that would search these images, posts, and peoples out? would such a use be ethical? could one work out likely source peoples to whom these remains belong? given the use of computer vision for surveillance and social control, to what degree is our work dangerous and complicit? How do we ethically use computation to combat the trade?
 
 ---
@@ -237,12 +254,22 @@ This research has been generously supported by the Social Sciences and Humanitie
 
 ### [boonetrade.github.io](http://bonetrade.github.io)
 
-for technical details, see our paper in The Journal of Computer Applications in Archaeology, [DOI: 10.5334/jcaa.8](https://journal.caa-international.org/articles/10.5334/jcaa.8/) 
+for technical details, see our paper in <br> The Journal of Computer Applications in Archaeology, [DOI: 10.5334/jcaa.8](https://journal.caa-international.org/articles/10.5334/jcaa.8/) 
 
 ---
 ### Image Credits
 
 - dramatization of Abraham Ulrikab - screenshot from CBC The Nature of Things, [Trapped in a Human Zoo](http://www.cbc.ca/natureofthings/episodes/trapped-in-a-human-zoo)
 - screenshot of museum exhibiting skeletons - screenshot from CBC The Nature of Things, [Trapped in a Human Zoo](http://www.cbc.ca/natureofthings/episodes/trapped-in-a-human-zoo)
-- PixPlot visualization [Yale DH Lab](https://github.com/YaleDHLab/pix-plot)
 - sources for Instagram screenshots will not be shared in public
+
+---
+### Credits for Code & Demos & Screenshots 
+
+- Finding Near-Matches in the Rijksmuseum with Pastec [Ryan Baumann](https://ryanfb.github.io/etc/2015/11/03/finding_near-matches_in_the_rijksmuseum_with_pastec.html)
+- Identifying Similar Images with Tensorflow [Douglas Duhaime](http://douglasduhaime.com/posts/identifying-similar-images-with-tensorflow.html)
+- Mechanical Kubler [Matthew Lincoln](https://github.com/mechanical-kubler/mechanical_kubler_generator)
+- Machine Visions [Yannick Asogba](http://clome.info/work/machine-visions/)
+- PixPlot visualization [Yale DH Lab](https://github.com/YaleDHLab/pix-plot)
+- Tensorflow for Poets [Peter Warden/Google Codelabs](https://codelabs.developers.google.com/codelabs/tensorflow-for-poets/#0)
+

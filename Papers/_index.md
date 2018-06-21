@@ -24,4 +24,4 @@ Huffer, D. and Graham, S. 2018 Fleshing out the Bones: Studying the Human Remain
 
 #### Conference Presentations
 
-{{% notice tip %}}Many of our slidedecks for conference presentations are built with reveal.js. They will also be availabel here in due course!{{% /notice %}}
+June 29, 2018. 'Fleshing out the Bones: understanding the human remains trade with computer vision' [_Transatlantic Cultural Property Crime Symposium_]( http://www.law.qmul.ac.uk/events/items/2018-transatlantic-cultural-property-crime-symposium.html) - the [slides are available here](cultpropcrime-06-18)
